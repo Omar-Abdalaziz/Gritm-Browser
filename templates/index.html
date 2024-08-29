@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gritm Browser</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-center items-center p-4">
+            <h1 class="text-4xl font-bold text-blue-600">Gritm</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex flex-col items-center justify-center min-h-screen p-6">
+        <!-- Search Area -->
+        <div class="search-container bg-white p-8 rounded-lg shadow-lg flex flex-col items-center">
+            <input type="text" id="search-query" class="search-bar border border-gray-300 p-4 w-full rounded-lg focus:outline-none text-lg" placeholder="Search the web...">
+            <button id="search-button" class="bg-blue-600 text-white p-4 rounded-lg mt-4 hover:bg-blue-700 transition text-lg">Search</button>
+        </div>
+
+        <!-- Search Results -->
+        <div id="results" class="search-container mt-8"></div>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

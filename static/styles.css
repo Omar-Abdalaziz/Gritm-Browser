@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #202124;
+}
+
+.search-bar {
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+}
+
+.result-card {
+    border-bottom: 1px solid #dcdcdc;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.result-card:last-child {
+    border-bottom: none;
+}
+
+.result-title {
+    font-size: 18px;
+    color: #1a73e8;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.result-description {
+    margin-top: 8px;
+    color: #4d5156;
+}
+
+.result-link {
+    margin-top: 4px;
+    color: #1a73e8;
+}
+
+.search-container {
+    max-width: 800px;
+    width: 100%;
+}
